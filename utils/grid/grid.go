@@ -86,6 +86,13 @@ func (p1 Point) Add(p2 Point) Point {
 	}
 }
 
+func (p1 Point) Sub(p2 Point) Point {
+	return Point{
+		X: p1.X - p2.X,
+		Y: p1.Y - p2.Y,
+	}
+}
+
 func CheckDirection[T any](arr [][]T, p Point, dir int) T {
 	next := p.Add(Directions[dir])
 	return SafeGet(arr, next)
