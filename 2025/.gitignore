@@ -28,3 +28,6 @@ build/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Output files
+output.txt
